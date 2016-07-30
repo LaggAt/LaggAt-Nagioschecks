@@ -23,6 +23,10 @@ password for clickatell
 
 Tested on Python 2.7 with nagiosplugin 0.4.4
 
+## DOWNLOAD: 
+
+* [Get latest version from here](https://raw.githubusercontent.com/LaggAt/LaggAt-Nagioschecks/master/src/check_clickatell_balance.py)
+
 ## Links:
 
 * [Site on NagiosExchange](https://exchange.nagios.org/directory/Addons/Active-Checks/check_clickatell_balance)
