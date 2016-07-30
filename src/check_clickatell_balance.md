@@ -1,10 +1,14 @@
-Check the balance on Clickatell.com SMS gateway using HTTP-API
+# Check the balance on Clickatell.com SMS gateway using HTTP-API
 
-Check the balance on Clickatell.com SMS gateway using HTTP-API 
-Usage: check_clickatell_balance.py [options] 
+## Prequisites
 
-Options: 
+* Python 2.7 (not tested on other versions, please give feedback)
+* nagiosplugin (install with 'easy_install nagiosplugin')
+* Icinga2, Nagios, ... server.
 
+## Usage: check_clickatell_balance.py [options] 
+
+```
 -w RANGE, --warning=RANGE 
 warning threshold (default: 50%) 
 -c RANGE, --critical=RANGE 
@@ -15,10 +19,11 @@ api-id for clickatell
 user for clickatell 
 -p STRING, --passwd=STRING 
 password for clickatell 
+```
 
-Tested on Python 2.7 with nagiosplugin 0.4.4 
-Install nagiosplugin with 'easy_install nagiosplugin' 
+Tested on Python 2.7 with nagiosplugin 0.4.4
 
-Links:
+## Links:
 
-https://exchange.nagios.org/directory/Addons/Active-Checks/check_clickatell_balance
+* [Site on NagiosExchange](https://exchange.nagios.org/directory/Addons/Active-Checks/check_clickatell_balance)
+
