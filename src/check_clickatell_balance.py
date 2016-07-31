@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#(c) Florian Lagg (info@lagg.at) 2012
+#(c) Florian Lagg (github@florian.lagg.at) 2012-2016
 #Created on 20.05.2012
 
 #Licensed under the terms of the General Public License 2.0
