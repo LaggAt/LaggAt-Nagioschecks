@@ -1,4 +1,8 @@
-# Check the balance on Clickatell.com SMS gateway using HTTP-API
+# Check Unifi WIFI state.
+
+Unifi Controller has it's own up check, but I wanted to include it in my Icinga2 installation. So I can see all outages from one place. 
+
+This is a quick script, which should partly be rewritten very soon. Especially the Unifi API should be encapsulated into it's own class. If you have time to help, feel free to fork me. Anyway: It works for me with my controller version, please file a bug if it doesn't for you. 
 
 ## Prequisites
 
@@ -27,9 +31,9 @@ Tested on Python 2.7 with nagiosplugin 1.2.4
 
 ## DOWNLOAD: 
 
-* [Get latest version from here](TODO)
+* [Get latest version from here](https://raw.githubusercontent.com/LaggAt/LaggAt-Nagioschecks/master/src/check_unifi.py)
 
 ## Links:
 
-* [Site on NagiosExchange](TODO)
+* [Site on NagiosExchange](https://exchange.nagios.org/directory/Addons/Active-Checks/check_unifi/details)
 
