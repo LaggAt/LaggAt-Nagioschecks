@@ -2,14 +2,6 @@
 # -*- coding: utf-8 -*-
 #(c) Florian Lagg (info@lagg.at) 2016
 
-#Python3 setup Ubuntu
-# apt-get install python3-setuptools
-# easy_install3 pip
-# cd /usr/local/bin
-# cp pip2 pip
-# pip3 install urbackup-server-web-api-wrapper
-# pip3 install nagiosplugin
-
 import argparse
 import nagiosplugin
 import urbackup_api
