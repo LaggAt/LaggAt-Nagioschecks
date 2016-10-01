@@ -8,6 +8,7 @@
 # cd /usr/local/bin
 # cp pip2 pip
 # pip3 install urbackup-server-web-api-wrapper
+# pip3 install nagiosplugin
 
 import argparse
 import nagiosplugin
@@ -25,11 +26,12 @@ class Failing_Backup(nagiosplugin.Resource):
         self.status = self.getStatus()
         self.failing_backups = []
         for client in self.status:
-            name = client["name"]
-            if not client["image_ok"]:
-                self.failing_backups.append({'client': name, 'fail': 'image'})
-            if not client["file_ok"]:
-                self.failing_backups.append({'client': name, 'fail': 'file'})
+            if not "rejected" in client or ("rejected" in client and not client["rejected"]):
+                name = client["name"]
+                if not client["image_ok"]:
+                    self.failing_backups.append({'client': name, 'fail': 'image'})
+                if not client["file_ok"]:
+                    self.failing_backups.append({'client': name, 'fail': 'file'})
         return nagiosplugin.Metric('failing_backups', len(self.failing_backups), )
     
     def getStatus(self):
