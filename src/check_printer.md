@@ -11,25 +11,18 @@ Monitors your printer supplies fill state. Tested with an OKI printer, but shoul
 
 ## Usage: check_printer.py [options] 
 
+Example: check_printer.py -i 192.168.0.200 --special [opc] 20 10  --special [fuser] 5 2 --special [transferUnit] 5 2
+
 ```
-For "Percent" measurements (e.g. toner):
---percentWarn=RANGE 
-warning threshold (default: 40%) 
---percentCrit=RANGE 
-critical threshold (default: 20%) 
-For "Impressions" measurements (e.g. transferUnit):
---impressionWarn=RANGE 
-warning threshold for "impressions" (default: 500) 
---impressionCrit=RANGE 
-critical threshold for "impressions"  (default: 250) 
-All other measure-units will be calculated in % and compared to these thresholds:
 -w RANGE, --warning=RANGE 
 warning threshold (default: 20%) 
 -c RANGE, --critical=RANGE 
 critical threshold (default: 10%) 
+--special <searchstring> <warning> <critical>
+special thresholds for for supplies of type/name
 -i STRING, --host=STRING 
 host name or ip of printer
--u STRING, --user=STRING 
+-p STRING, --pass=STRING 
 community name (default: public)
 ```
 
