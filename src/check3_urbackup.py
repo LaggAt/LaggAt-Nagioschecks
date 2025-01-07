@@ -50,7 +50,7 @@ class Failing_Backup_Context(nagiosplugin.Context):
 
 class Failing_Backup_Summary(nagiosplugin.Summary):
     def problem(self, results):
-        return "failing backups: %s'" % (', '.join(
+        return "failing backups: %s" % (', '.join(
             ["%s.%s failed" % (b[u'client'],b[u'fail'],) for b in results.results[0].resource.failing_backups]
             )
         )
